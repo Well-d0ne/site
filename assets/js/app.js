@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\r\n\r\n//  jQuery( window ).scroll(function() {\r\n// \tvar pos = jQuery( window ).scrollTop() / 2;\r\n//  \tjQuery('.main-bg').css({backgroundPosition: 'left -' + pos + 'px'});\r\n//  });\r\nlet header = document.getElementById('header')\r\nlet burger = document.getElementById('burger')\r\nlet collapse = document.getElementById('collapse')\r\n\r\nburger.addEventListener('click', () => {\r\n\tburger.classList.toggle('active')\r\n\tcollapse.classList.toggle('active')\r\n})\r\n\r\nwindow.addEventListener('scroll', () => {\r\n\tif(window.scrollY > 60) {\r\n\t\theader.classList.add('header-fixed');\r\n\t} else {\r\n\t\theader.classList.remove('header-fixed');\r\n\t}\r\n})\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+eval("\r\n\r\n// jQuery( window ).scroll(function() {\r\n// \tvar pos = jQuery( window ).scrollTop() / 2;\r\n// \tjQuery('.main-bg').css({backgroundPosition: 'left -' + pos + 'px'});\r\n// });\r\n\r\nlet header = document.getElementById('header')\r\nlet burger = document.getElementById('burger')\r\nlet collapse = document.getElementById('collapse')\r\n\r\nburger.addEventListener('click', () => {\r\n\tburger.classList.toggle('active')\r\n\tcollapse.classList.toggle('active')\r\n})\r\n\r\nwindow.addEventListener('scroll', () => {\r\n\tif(window.scrollY > 60) {\r\n\t\theader.classList.add('header-fixed');\r\n\t} else {\r\n\t\theader.classList.remove('header-fixed');\r\n\t}\r\n})\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
 
 /***/ }),
 
