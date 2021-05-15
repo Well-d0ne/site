@@ -11,7 +11,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>Landie</title>
+    <title>My site</title>
     
     <!-- ico -->
     <link rel="apple-touch-icon" sizes="57x57" 	href="assets/images/apple-icon-57x57.png">
@@ -32,90 +32,104 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     
-    <!-- link -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
+<style>
+    body {
+        opacity: 0;
+    }
+</style>
 <body>
 
-    <header class="header">
+    <header id="header" class="header">
     	<main class="container">
     		<nav class="navbar">
-    			<div class="navbar__start col-4">
-    				<ul class="navbar__ul">
-    					<li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
-    					<li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
-    					<li class="navbar__item"><a href="#" class="navbar__link">Contact</a></li>
-    				</ul>
-    			</div>
-    			<div class="navbar__center col-4">
-    				<a href="#" class="navbar__logo" title="title"><img src="assets/images/Landie.svg" alt="Landie"></a>
-    				<!-- <button id="burger" class="navbar__burger"><span></span></button> -->
-    			</div>
-    			<div class="navbar__end col-4">
-    				<a href="" class="navbar__btn btn btn-primary">Buy Now</a>
-    			</div>
+    			<button id="burger" class="burger"><span></span></button>
+    			<ul id="collapse" class="navbar_ul">
+    				<li class="navbar__item"><a href="" class="navbar__link">Главная</a></li>
+    				<li class="navbar__item"><a href="" class="navbar__link">Наши проекты</a></li>
+    				<li class="navbar__item"><a href="" class="navbar__link">Услуги</a></li>
+    				<li class="navbar__item"><a href="" class="navbar__link">Новости</a></li>
+    				<li class="navbar__item"><a href="" class="navbar__link">Контакты</a></li>
+    			</ul>
     		</nav>
     	</main>
     </header>
+    
 
-    <div class="wrapper h100 first-bg">
+    
+    <div class="page page-center half-screen main-bg">
     	<main class="container">
-    		<div class="h100__indent d-block">
-    			<section class="page-title">
-    				<h1>Introduce Your Product Quickly & Effectively</h1>
-    				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-    					Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
-    					penatibus et magnis dis parturient montes, nascetur ridiculus</br></br>mus. Donec 
-    					quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat 
-    					massa quis enim.</p>
-    			</section>
-    			<div class="btn-group">
-    				<button class="btn btn-primary mr30">Purchase UI Kit</button>
-    				<button class="btn btn-limpid">Learn More</button>
-    			</div>
+    		<div class="page_center page_title main-indent m-auto">
+    			<p class="text-white">Передовая IT студия</p>
+    			<h1>Мы создаем качественный и востребованный продукт</h1>
+    			<a href="" class="btn btn-primary">Наши проекты</a>
     		</div>
     	</main>
     </div>
     
-    <div class="wrapper h100">
+    <div class="page">
     	<main class="container">
-    		<div class="h100__indent row">
-    			<div class="col-6">
-    				<section class="page-title">
-    					<h2>Light, Fast & Powerful</h2>
-    					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-    						Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
-    						penatibus et magnis dis parturient montes, nascetur ridiculus</br></br>mus. Donec 
-    						quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat 
-    						massa quis enim.</p>
-    				</section>
-    				<div class="d-flex">
-    					<div class="d-block mr30">
-    						<div class="icon"><img src="assets/images/Icon.svg" alt="icon"></div>
-    						<div class="page-title__mini">
-    							<h5>Title Goes Here</h5>
-    							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
-    								commodo ligula eget dolor.</p>
-    						</div>
-    					</div>
-    					<div class="d-block">
-    						<div class="icon"><img src="assets/images/Icon.svg" alt="icon"></div>
-    						<div class="page-title__mini">
-    							<h5>Title Goes Here</h5>
-    							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
-    								commodo ligula eget dolor.</p>
-    						</div>
+    		<div class="page_center">
+    			<article class="main-indent page_title m-auto-h mb-8em">
+    				<h2>Мы создаем сайты любой сложости любого направления</h2>
+    				<p>Здесь можно посмотреть пример наших услуг для более полгого ознакомления
+    					со списком 
+    					нажмите на кнопку снизу
+    				</p>
+    			</article>
+    			<section class="row mb-8em">
+    				<div class="card col-lg-4 m-auto-h">
+    					<img src="assets/images/world.svg" alt="logo">
+    					<div class="card-title">
+    						<h5>Создание сайта</h5>
+    						<p>Профиссеональная верстка с использованием 
+    							соверменных инстументов(full-stack разработка)</p>
     					</div>
     				</div>
-    			</div>
-    			<div class="col-6 d-flex justify-end">
-    				<img src="assets/images/second.jpg" alt="bg">
-    			</div>
+    				<div class="card col-lg-4 m-auto-h">
+    					<img src="assets/images/server.svg" alt="logo">
+    					<div class="card-title">
+    						<h5>Настройка сервера</h5>
+    						<p>Помощь в настройке серверов привязка доменов настройка 
+    							htaccess файла и фыв тд</p>
+    					</div>
+    				</div>
+    				<div class="card col-lg-4 m-auto-h">
+    					<img src="assets/images/seo.svg" alt="logo">
+    					<div class="card-title">
+    						<h5>SEO продвижение</h5>
+    						<p>Поможем поднять сайт на вершину в поисковой выдаче
+    							советы по продвижению
+    						</p>
+    					</div>
+    				</div>
+    			</section>
+    			<a href="" class="btn btn-primary">Все услуги</a>
     		</div>
     	</main>
     </div>
     
+    <div class="page page-overlay">
+    	<main class="container">
+    		<div class="page_start">
+    			<div class="row">
+    				<div class="col-lg-6">
+    					<div class="page_title main-indent limit-width m-auto-h">
+    						<h2>Высокие стандарты разработки</h2>
+    						<p>Индивидуальный подход к каждому проекту, тщательный разбор
+    							и подготовка к выполнению заказа на высшем уровне, 
+    							только качевенный и продуманый продукт
+    						</p>
+    						<a href="">Подробнее о компании</a>
+    					</div>
+    				</div>
+    				<div class="col-lg-6 img-set">
+    					<img src="assets/images/work.jpg" alt="">
+    				</div>
+    			</div>
+    		</div>
+    	</main>
+    </div>
 
     <footer class="footer">
     	<main class="container">
@@ -124,8 +138,11 @@
     		</div>
     	</main>
     </footer>
+
+    <!-- libs -->
     
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- script -->
     <script src="assets/js/app.js"></script>
 </body>
 </html>
