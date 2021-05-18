@@ -1182,7 +1182,7 @@ a {
     margin-right: 5em !important;
 }
 
-.m-auto-h {
+.m-auto-2 {
     margin: 0 auto;
 }
 
@@ -1409,6 +1409,14 @@ a {
     align-items: center;
 }
 
+.page_start {
+    text-align: start;
+}
+
+.page_center {
+    text-align: center;
+}
+
 .page_end {
     text-align: end;
     display: -ms-flexbox;
@@ -1420,13 +1428,6 @@ a {
 .page_title {
     max-width: 740px;
     width: 100%;
-}
-
-.page_center {
-    display: block;
-    text-align: center;
-    -ms-flex-direction: column;
-    flex-direction: column;
 }
 
 .page-overlay {
@@ -1448,17 +1449,17 @@ a {
     z-index: -1;
 }
 
-.main-indent p {
+.title-indent p {
     margin-bottom: 1.2em;
     font-weight: 500;
 }
 
-.main-indent h1 {
+.title-indent h1 {
     margin-bottom: 1.1em;
     line-height: 1.2;
 }
 
-.main-indent h2 {
+.title-indent h2 {
     margin-bottom: 1em;
     line-height: 1.2;
 }
@@ -1515,12 +1516,6 @@ a {
     background-color: #fff;
 }
 
-.wrapper {
-    width: 100%;
-    padding-top: 7em;
-    padding-bottom: 7em;
-}
-
 .full-screen {
     height: 100vh;
 }
@@ -1530,7 +1525,15 @@ a {
     width: 100%;
 }
 
-.card__icon {
+.card-services img {
+    margin-bottom: 2.8em;
+}
+
+.card-services p {
+    margin-bottom: 1em;
+}
+
+.card-icon img {
     width: 105px;
     height: 105px;
     margin-bottom: 3em;
@@ -1540,20 +1543,47 @@ a {
     margin-bottom: 0.8em;
 }
 
-.card-services {
-    max-width: 350px !important;
+.card-line {
+    padding: 2em;
+    border-radius: .2em;
+    background: rgba(153, 153, 153, 0.1);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
-.card-services img {
-    margin-bottom: 2.8em;
-}
-
-.card-services h5 {
+.card-mini {
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
-.card-services p {
+.card-mini:first-child {
+    margin-left: 0;
+}
+
+.card-mini:last-child {
+    margin-right: 0;
+}
+
+.card-mini_body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 1em;
+}
+
+.card-mini img {
+    width: 32px;
+    height: 32px;
+    margin-right: 1em;
 }
 
 .form {
@@ -1561,7 +1591,7 @@ a {
     width: 100%;
     padding: 4em 4em;
     border-radius: 0.2em;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(153, 153, 153, 0.1);
 }
 
 .form_group {
@@ -6153,6 +6183,11 @@ a {
 
     .page_title {
         max-width: none;
+    }
+
+    .card-mini {
+        margin-left: 0;
+        margin-right: 2;
     }
 }
 
