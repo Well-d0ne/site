@@ -11,7 +11,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>My site</title>
+    <title>IT - WebTech</title>
     
     <!-- ico -->
     <link rel="apple-touch-icon" sizes="57x57" 	href="assets/images/apple-icon-57x57.png">
@@ -37,15 +37,15 @@
     		 opacity: 0;
     	}
     </style></head>
-<body>
+<body id="body">
 
     <header id="header" class="header">
     	<div class="container">
     		<nav class="navbar navbar-pos">
     			<button id="burger" class="burger"><span></span></button>
     			<ul id="collapse" class="navbar_ul">
-    				<li class="navbar__item"><a href="" class="navbar__link">Главная</a></li>
-    				<li class="navbar__item"><a href="" class="navbar__link">Наши проекты</a></li>
+    				<li class="navbar__item"><a id="dark-theme" href="#" class="navbar__link">Главная</a></li>
+    				<li class="navbar__item"><a id="light-theme" href="#" class="navbar__link">Наши проекты</a></li>
     				<li class="navbar__item"><a href="" class="navbar__link">Услуги</a></li>
     				<li class="navbar__item"><a href="" class="navbar__link">Новости</a></li>
     				<li class="navbar__item"><a href="" class="navbar__link">Контакты</a></li>
@@ -56,11 +56,11 @@
     
 
     
-    <main class="page page-center full-screen main-bg">
+    <main class="page page-center full-screen dark-bg">
     	<div class="container">
     		<div class="page_end">
-    			<arcticle class="page_title title-indent">
-    				<p class="text-white">IT Web Advance</p>
+    			<arcticle class="page__title title-indent">
+    				<p class="text-white">IT - WebTech</p>
     				<h1>Мы создаем качественный и востребованный продукт</h1>
     				<a href="#" class="btn btn-primary">Наши проекты</a>
     			</arcticle>
@@ -71,10 +71,10 @@
     <div class="page">
     	<div class="container">
     		<div class="page_center">
-    			<header class="page_title title-indent m-auto-2 mb-5">
+    			<header class="page__title title-indent m-auto-2 mb-5">
     				<h2>Ваши преимущества в сотрудничестве с нами</h2>
     			</header>
-    			<section class="row mb-3">
+    			<section class="row mb-5 mt-5">
     				<div class="card card-icon col-lg-4 m-auto-2">
     					<img src="assets/images/coding.svg" alt="logo">
     					<div class="card__title">
@@ -110,7 +110,7 @@
     		<div class="page_start">
     			<div class="row mb-5">
     				<div class="col-lg-6">
-    					<div class="page_title title-indent limit-width m-auto-2 mb-3">
+    					<div class="page__title title-indent limit-width m-auto-2 mb-3">
     						<h2>Высокие стандарты разработки</h2>
     						<p class="mb-3">Индивидуальный подход к каждому проекту, тщательный разбор
     							и подготовка к выполнению заказа на высшем уровне, 
@@ -187,7 +187,7 @@
     	<div class="container">
     		<div class="page_start">
     			<header class="d-flex justify-content-between mb-5 align-items-center flex-wrap">
-    				<div class="main-indent page_title">
+    				<div class="main-indent page__title">
     					<h2 class="text-white">Наши работы, на которых мы специализируемся</h2>
     				</div>
     				<div class="btn-group">
@@ -248,7 +248,7 @@
     <div class="page page-center page-overlay">
     	<div class="container">
     		<div class="page_center">
-    			<header class="page_title title-indent m-auto-2 mb-5">
+    			<header class="page__title title-indent m-auto-2 mb-5">
     				<h2>Наши проекты</h2>
     				<p>Вот несколько работ от нас</p>
     			</header>
@@ -281,7 +281,7 @@
     <div class="page page-center">
     	<div class="container">
     		<div class="page_center">
-    			<header class="page_title title-indent m-auto-2 mb-5">
+    			<header class="page__title title-indent m-auto-2 mb-5">
     				<h2>Свяжитесь с нами</h2>
     			</header>
     			<form class="form m-auto" action="">
@@ -309,43 +309,43 @@
     			<div class="row mb-5">
     
     				<div class="col-lg-4">
-    					<div class="mb-4">
+    					<div class="mb-4 ml-2">
     						<h5>Навигация</h5>
     					</div>
     					<ul class="navbar d-block">
-    						<li class="mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Главная</a></li>
-    						<li class="mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Наши проекты</a></li>
-    						<li class="mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Наши услуги</a></li>
-    						<li class="mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Контакты</a></li>
+    						<li class="ml-2 mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Главная</a></li>
+    						<li class="ml-2 mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Наши проекты</a></li>
+    						<li class="ml-2 mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Наши услуги</a></li>
+    						<li class="ml-2 mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Контакты</a></li>
     					</ul>
     				</div>
     
     				<div class="col-lg-4">
-    					<div class="mb-4">
+    					<div class="mb-4 ml-2">
     						<h5>Наши проекты</h5>
     					</div>
     					<ul class="navbar d-block">
-    						<li class="mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> PopJaz</a></li>
-    						<li class="mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Selepration</a></li>
-    						<li class="mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Gik</a></li>
-    						<li class="mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Emaster</a></li>
+    						<li class="ml-2 mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> PopJaz</a></li>
+    						<li class="ml-2 mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Selepration</a></li>
+    						<li class="ml-2 mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Gik</a></li>
+    						<li class="ml-2 mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Emaster</a></li>
     					</ul>
     				</div>
     
     				<div class="col-lg-4">
-    					<div class="mb-4">
+    					<div class="mb-4 ml-2">
     						<h5>Социальные сети</h5>
     					</div>
     					<ul class="navbar d-block">
-    						<li class="mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Vk</a></li>
-    						<li class="mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Telegram</a></li>
-    						<li class="mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Instagram</a></li>
+    						<li class="ml-2 mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Vk</a></li>
+    						<li class="ml-2 mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Telegram</a></li>
+    						<li class="ml-2 mb-2"><a href=""><i class="fas fa-angle-right mr-1"></i> Instagram</a></li>
     					</ul>
     				</div>
     
     			</div>
     			<div class="divider"></div>
-    			<p class="mt-5">IT Web Advance(с) 2021. Все права защищены.</p>
+    			<p class="mt-5">IT - WebTech(с) 2021. Все права защищены.</p>
     		</div>
     	</div>
     </footer>
